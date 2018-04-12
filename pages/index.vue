@@ -3,18 +3,15 @@
     <div>
       <app-logo/>
       <h1 class="title">
-        dropdown_vue
+        dropdown
       </h1>
       <h2 class="subtitle">
         dropdown插件的一个Vue版本
       </h2>
       <div class="links">
+        <router-link to="detail" class="button--grey">Documentation</router-link>
         <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
+          href="https://github.com/JessieMcQueen/dropdown_vue"
           target="_blank"
           class="button--grey">GitHub</a>
       </div>
@@ -24,10 +21,12 @@
 
 <script>
 import AppLogo from '~/components/AppLogo.vue'
+import Detail from './detail.vue'
 
 export default {
   components: {
-    AppLogo
+    AppLogo,
+    Detail
   }
 }
 </script>
